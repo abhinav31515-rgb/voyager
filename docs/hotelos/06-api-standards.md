@@ -1,26 +1,31 @@
 # 06. API Standards and Contracts
 
-## Principles
-- Versioned endpoints (`/v1/...`).
-- Idempotency keys for booking/payment writes.
-- Pagination, filtering, and consistent error schema.
-- Webhook signature verification.
+## API style guide
+- Prefix all routes by version (`/v1`).
+- ISO-8601 timestamps, UTC storage.
+- Standard error envelope (`code`, `message`, `details`, `correlation_id`).
+- Cursor pagination for large datasets.
 
-## Resource groups
-- Properties, Rooms, Inventory, Rates
-- Reservations, Folios, Payments
-- Guests, Tasks, Content
-- Integrations, Webhooks, Reports
+## Critical endpoint classes
+- Availability search and quote
+- Reservation create/amend/cancel/check-in/check-out
+- Rate and restriction updates
+- Task management endpoints
+- Payment capture/refund endpoints
 
-## Contract governance
-- Backward-compatible minor updates.
-- Breaking changes only in major API versions.
-- 12-month deprecation window.
+## Contract rules
+- Additive changes are minor versions.
+- Breaking changes require new major version + migration path.
+- Deprecation windows: min 12 months.
 
-See [Migration Playbook](./15-migration-adoption.md).
+## Security model
+- OAuth/OIDC user auth.
+- Scoped PAT/service tokens for integrations.
+- Idempotency keys mandatory for booking/payment POST endpoints.
 
-## API security
-- OAuth2/OIDC for user flows.
-- Scoped service tokens for connectors.
+## Webhooks
+- Signed payloads + replay protection.
+- Delivery retry policy and dead-letter queue.
+- Consumer guidance + schema registry.
 
-Details in [Security](./07-data-governance-security-compliance.md).
+Consumer onboarding and cutover details: [Migration Playbook](./15-migration-adoption.md).

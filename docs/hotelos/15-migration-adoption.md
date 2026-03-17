@@ -1,19 +1,30 @@
 # 15. Migration and Adoption Playbook
 
 ## Migration sources
-- Legacy Voyager-style admin setups
-- In-house monolith back-office tools
-- Mixed SaaS + spreadsheet processes
+- Legacy Voyager-like admin stacks
+- In-house reservation tools
+- Spreadsheet-driven operations
 
-## Migration approach
-1. Discovery and data mapping
-2. API and schema compatibility checks
-3. Parallel run for critical booking flows
-4. Controlled cutover and rollback readiness
+## Migration workstream
+1. Discovery and system inventory
+2. Data mapping and contract compatibility
+3. Dual-run period for critical booking flows
+4. Cutover + rollback readiness
+5. Hypercare and post-launch stabilization
+
+## Data migration controls
+- Field-level mapping documents
+- Data quality checks and reconciliation reports
+- Dry-run migration in staging
 
 ## Adoption strategy
-- Role-based onboarding tracks
-- In-product guides and SOP-linked help
-- Hypercare period after launch
+- Role-based training paths
+- SOP alignment with in-product guidance
+- Champions program at each property
 
-Commercial onboarding dependencies: [GTM](./13-commercial-pricing-gtm.md).
+## Success criteria
+- Booking and payment continuity during cutover
+- Measurable productivity improvement by role
+- Incident rates within planned thresholds
+
+Commercial dependency: [GTM and pricing](./13-commercial-pricing-gtm.md). Outcome tracking: [KPI](./16-kpi-analytics.md).

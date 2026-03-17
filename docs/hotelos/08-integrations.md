@@ -1,22 +1,30 @@
 # 08. Integrations and Connectors
 
-## Connector categories
-1. Payment gateways
-2. OTA/channel manager adapters
-3. Messaging providers (email/SMS/WhatsApp)
-4. Accounting and BI exports
+## Supported integration domains
+1. Payments
+2. OTA/channel manager
+3. Messaging (email/SMS/WhatsApp)
+4. Accounting/BI exports
+5. Identity/SSO
 
-## Connector contract
-- Standard auth lifecycle
-- Health checks and rate limiting
-- Retry/backoff policy
-- Dead-letter queue support
-- Certification test suite required for production approval
+## Connector framework requirements
+- Common interface for auth, sync, retry, and health.
+- Provider-specific adapter implementation.
+- Certification test suite before production enablement.
+- Feature flags for phased rollout.
 
-Operational policy: [Operations/SRE](./12-operations-sre.md).
+## Operational design
+- Pull and push sync support.
+- Conflict resolution strategy for external updates.
+- Idempotent ingestion and dedupe by external references.
 
-## Data consistency model
-- Outbound events are durable and replayable.
-- External booking references must remain immutable links.
+## Reliability and support
+- Provider SLA metadata and alert thresholds.
+- Playbooks for degraded providers.
+- Manual reconciliation tools for failed sync batches.
 
-See [Domain Model](./04-domain-model.md).
+## Security requirements
+- Secret rotation and least-privilege credentials.
+- Signed webhook verification.
+
+Connector API conventions: [API Standards](./06-api-standards.md). Incident handling: [Operations/SRE](./12-operations-sre.md).

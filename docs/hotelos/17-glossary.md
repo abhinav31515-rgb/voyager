@@ -7,6 +7,9 @@
 - **PMS:** Property Management System.
 - **RBAC:** Role-Based Access Control.
 - **PII:** Personally Identifiable Information.
-- **RPO/RTO:** Recovery Point/Time Objectives.
+- **RPO/RTO:** Recovery Point/Recovery Time Objective.
+- **SLO/SLA:** Service Level Objective/Agreement.
+- **Canary release:** limited rollout used to validate production behavior.
+- **Outbox pattern:** durable event publish pattern to avoid lost events.
 
-For metric definitions, see [KPI Framework](./16-kpi-analytics.md).
+See [KPI Framework](./16-kpi-analytics.md) and [Architecture](./05-system-architecture.md).

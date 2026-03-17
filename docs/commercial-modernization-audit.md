@@ -1,5 +1,7 @@
 # Voyager Commercial-Grade Assessment and Modernization Plan (2026)
 
+> Note: A dedicated, cross-referenced commercial documentation suite is now available at [`docs/hotelos/README.md`](./hotelos/README.md).
+
 ## 1) Executive summary
 
 Voyager is a Laravel admin panel package intended to accelerate back-office CRUD/BREAD development (Browse, Read, Edit, Add, Delete), with built-in media management, menu builder, settings, role/permission controls, and multilingual support.

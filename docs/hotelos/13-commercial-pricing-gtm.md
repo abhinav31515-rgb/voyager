@@ -1,18 +1,28 @@
 # 13. Commercial Model, Pricing, and GTM
 
-## Product editions
-- Starter: single property core workflows
-- Growth: multi-property + channel sync
-- Enterprise: SSO, advanced compliance, custom connectors
+## Packaging
+- **Starter:** single property, core booking + basic CMS.
+- **Growth:** multi-property + advanced rates + first integrations.
+- **Enterprise:** SSO, compliance exports, premium support, custom connectors.
 
-## Pricing model options
-- Subscription per property/month
-- Volume-based usage add-ons
-- Implementation and partner services
+## Pricing components
+- Base subscription per property.
+- Usage add-ons (messages, transactions, connector volume).
+- One-time implementation/migration packages.
 
-## GTM strategy
-- Pilot with design partners.
-- Publish migration playbook and onboarding accelerators.
-- Build partner certification for agencies/integrators.
+## Unit economics focus
+- CAC payback by segment.
+- Gross margin impact of support + custom work.
+- Connector maintenance cost governance.
 
-Success metrics defined in [KPI Framework](./16-kpi-analytics.md).
+## GTM motion
+- Pilot program with lighthouse hotels.
+- Agency/implementation partner channel.
+- Vertical case studies by hotel size/type.
+
+## Sales enablement artifacts
+- Security/compliance brief
+- ROI calculator (ops time + conversion uplift)
+- Migration readiness checklist
+
+Success measures in [KPI Framework](./16-kpi-analytics.md). Migration support in [Adoption Playbook](./15-migration-adoption.md).

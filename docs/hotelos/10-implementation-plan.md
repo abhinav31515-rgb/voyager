@@ -1,27 +1,37 @@
 # 10. Delivery and Implementation Plan
 
-## Workstreams
-- Platform Foundation
-- Core Domains (inventory/rates/reservations)
-- Operations and CMS
+## Program tracks
+- Product & UX
+- Domain engineering
 - Integrations
-- Quality, Security, and Observability
+- Security/compliance
+- SRE/reliability
+- Partner enablement
 
-## Phases
-- Phase A (0-90 days): foundation MVP
-- Phase B (90-180 days): operations maturity
-- Phase C (6-12 months): scale and partner ecosystem
+## Phase plan
+### Phase A (0–90 days)
+- Tenancy/auth/rbac foundation
+- Inventory + reservation + payments MVP
+- Basic website CMS and booking widget
+- E2E journey coverage for booking/check-in
 
-Detailed sequencing and gates depend on [Testing/Release](./11-testing-quality-release.md) and [Risk Register](./14-risk-register.md).
+### Phase B (90–180 days)
+- Rate optimization workflows
+- Housekeeping + maintenance modules
+- First OTA/channel + messaging connectors
+- Audit exports and advanced role templates
 
-## Package plan
-- `harbor/core`
-- `harbor/inventory`
-- `harbor/rates`
-- `harbor/reservations`
-- `harbor/ops`
-- `harbor/content`
-- `harbor/payments`
-- `harbor/channels`
-- `harbor/analytics`
-- `harbor/sdk`
+### Phase C (6–12 months)
+- Portfolio analytics and enterprise controls
+- Connector marketplace + partner certification
+- White-label toolkit
+
+## Delivery governance
+- Bi-weekly steering review.
+- Monthly risk and dependency review.
+- Quarterly roadmap re-baseline.
+
+## Exit criteria per phase
+- Phase gates tied to reliability/security/KPI thresholds.
+
+Validation references: [Testing](./11-testing-quality-release.md), [Operations](./12-operations-sre.md), [KPI](./16-kpi-analytics.md), [Risk Register](./14-risk-register.md).

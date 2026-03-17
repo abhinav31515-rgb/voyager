@@ -1,18 +1,30 @@
 # 12. Operations, SRE, and Support Runbooks
 
-## Reliability targets
-- API uptime: 99.9% monthly target.
-- Incident response and communication SLA by severity.
+## SLO/SLA baseline
+- Booking API availability: 99.9% monthly.
+- Payment operation success SLO by provider class.
+- Queue processing lag thresholds by job type.
 
-## Observability
-- Structured logs with tenant context.
-- Metrics for booking success/failure and latency.
-- Distributed tracing for integration calls.
+## Observability stack expectations
+- Structured logs with tenant and correlation IDs.
+- Metrics dashboards: booking funnel, payment health, sync health.
+- Tracing on all external provider calls.
 
-## Runbooks
-- Queue backlog handling
-- Connector outage fallback
-- Payment reconciliation delay handling
-- Booking conflict remediation
+## Runbooks (minimum set)
+- Reservation write-path degradation
+- Payment gateway outage and fallback mode
+- OTA/channel sync backlog and replay
+- Housekeeping board stale-data recovery
+- Tenant-level incident containment
 
-Risk linkage: [Risk Register](./14-risk-register.md).
+## Incident management
+- Severity matrix and on-call rotations.
+- RACI for engineering, support, and product.
+- Post-incident action item tracking.
+
+## Capacity and DR
+- Load-testing cadence.
+- Backup verification and restore drills.
+- RPO/RTO targets per edition.
+
+Risk alignment: [Risk Register](./14-risk-register.md). Quality gates: [Testing](./11-testing-quality-release.md).

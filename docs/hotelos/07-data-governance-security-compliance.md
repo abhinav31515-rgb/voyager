@@ -1,19 +1,29 @@
 # 07. Security, Governance, and Compliance
 
-## Security baseline
-- RBAC with least privilege defaults.
-- Optional SSO (SAML/OIDC).
-- 2FA for privileged users.
-- Encrypt credentials and sensitive tokens.
+## Security controls
+- Role-based access with least privilege.
+- 2FA for privileged roles.
+- SSO support for enterprise tenants.
+- Secrets encrypted at rest and rotated regularly.
 
 ## Data governance
-- Tenant data boundaries and policy enforcement.
-- PII classification and retention rules.
-- Audit logs for booking, pricing, refund, and access changes.
+- PII and financial-data classification tiers.
+- Tenant-aware retention and deletion policies.
+- Consent and preference management for communications.
 
-## Compliance controls
-- GDPR/CCPA-aligned deletion and consent workflows.
-- PCI scope minimization via gateway tokenization.
-- Traceable admin actions and immutable audit records.
+## Compliance posture
+- GDPR/CCPA workflows (export, deletion, consent proof).
+- PCI scope minimization via provider tokenization.
+- Audit evidence for permission, rate, refund, and booking changes.
 
-Related controls in [Testing/Release](./11-testing-quality-release.md) and [Risk Register](./14-risk-register.md).
+## Governance operating model
+- Quarterly access reviews.
+- Change approval policy for sensitive pricing/payment flows.
+- Incident postmortems and remediation tracking.
+
+## Required artifacts
+- Data flow diagrams
+- Records of processing activity
+- Threat model and control matrix
+
+Verification and controls mapping: [Testing](./11-testing-quality-release.md), [Risk Register](./14-risk-register.md), [Traceability](./traceability-matrix.md).

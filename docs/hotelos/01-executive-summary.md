@@ -1,27 +1,36 @@
 # 01. Executive Summary
 
-## Mission
-HarborOS aims to be a reusable, enterprise-ready framework for hotel websites, reservation operations, staff workflows, and partner integrations.
+## Vision
+HarborOS is a reusable, multi-tenant hotel platform framework that unifies reservation operations, website CMS, inventory/rates, and integrations in one product core.
 
-## Strategic rationale
-- Existing generic admin stacks are not hotel-workflow-first.
-- Archived/legacy dependencies increase maintenance and security risk.
-- Hotels need unified operations across website, front desk, housekeeping, and channel ecosystems.
+## Why this exists
+The market pain is fragmentation:
+- One tool for website content
+- Another for bookings
+- Separate processes for housekeeping and maintenance
+- Manual exports for finance/analytics
 
-See [PRD](./02-product-requirements.md) and [Commercial Model](./13-commercial-pricing-gtm.md).
+This fragmentation creates revenue leakage, staff overhead, and poor guest experience. See [PRD](./02-product-requirements.md).
 
-## Product scope
-- Multi-tenant core for single and multi-property portfolios.
-- Booking and reservation lifecycle.
-- Inventory and pricing controls.
-- Website CMS and booking widgets.
-- Integrations for payments, OTAs, and messaging.
+## Business outcomes we target
+1. Reduce booking flow abandonment via reliable direct-booking UX.
+2. Reduce operational errors at front desk and housekeeping handoffs.
+3. Improve revenue control via better rate/inventory governance.
+4. Enable multi-property operations without bespoke tooling.
 
-Detailed in [Domain Model](./04-domain-model.md) and [Integrations](./08-integrations.md).
+KPIs are defined in [KPI Framework](./16-kpi-analytics.md).
 
-## Success criteria
-- 99.9% uptime for booking APIs.
-- Reduced staff training and booking errors.
-- Improved direct booking conversion and RevPAR.
+## Strategic product shape
+- API-first core with modular packages (`harbor/*`)
+- Workflow-first admin for non-technical staff
+- Compliance-ready controls for audit and permissions
+- Integration framework for payment, OTA, and messaging systems
 
-Measurement defined in [KPI Framework](./16-kpi-analytics.md).
+Details: [Architecture](./05-system-architecture.md), [Integrations](./08-integrations.md), [Security](./07-data-governance-security-compliance.md).
+
+## Recommended rollout approach
+- Pilot with 2–3 hotels in controlled scope.
+- Prove reservation + payments + housekeeping reliability.
+- Expand into channel sync and portfolio analytics.
+
+Execution plan: [Implementation Plan](./10-implementation-plan.md).
