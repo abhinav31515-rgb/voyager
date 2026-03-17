@@ -26,6 +26,7 @@ Commercialization details: [Pricing and GTM](./13-commercial-pricing-gtm.md).
 - **FR-8** Payment workflows and reconciliation support.
 - **FR-9** Integration connector framework.
 - **FR-10** Reporting and KPI exports.
+- **FR-11** Dynamic website modules (blog/news/notifications/page sections).
 
 ## Non-functional requirements
 - **NFR-Sec:** RBAC, 2FA, immutable audit trail.
@@ -33,12 +34,17 @@ Commercialization details: [Pricing and GTM](./13-commercial-pricing-gtm.md).
 - **NFR-Perf:** P95 API latency targets per endpoint class.
 - **NFR-Data:** Zero cross-tenant leakage.
 - **NFR-Oper:** Runbook coverage for Sev1/Sev2 incidents.
+- **NFR-Cost:** Cost-to-serve controls by tenant tier.
+- **NFR-NoOps:** Managed-platform operation with minimal dedicated infrastructure staffing.
 
 ## Acceptance criteria (v1)
 - End-to-end booking flow passes E2E tests.
 - Payment capture/refund tested with at least 2 providers.
 - Rate changes audited and queryable.
 - Housekeeping task board usable on tablet/mobile.
+- Blog/news/notification modules publish dynamically without code changes.
 - All FR/NFR mapped to tests and owners.
 
 Traceability source of truth: [Traceability Matrix](./traceability-matrix.md) and [Testing](./11-testing-quality-release.md).
+
+Cost and no-DevOps operating constraints are detailed in [Commercial Cost-Effective Blueprint](./19-commercial-grade-cost-effective-blueprint.md).

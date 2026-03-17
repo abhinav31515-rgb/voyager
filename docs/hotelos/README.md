@@ -30,12 +30,13 @@ HarborOS is a proposed commercial-grade, hotel-first framework/platform for webs
 ### Assurance and controls
 - [Traceability Matrix](./traceability-matrix.md)
 - [18. Gap Analysis and Closure Plan](./18-gap-analysis-and-closure-plan.md)
+- [19. Commercial-Grade Cost-Effective Blueprint](./19-commercial-grade-cost-effective-blueprint.md)
 
 ## Reading paths
 
-- **Founders/Leadership:** 01 → 02 → 13 → 14 → 16 → 18
-- **Product + Design:** 02 → 03 → 09 → 16 → 15
-- **Engineering:** 04 → 05 → 06 → 08 → 10 → 11 → 12
+- **Founders/Leadership:** 01 → 02 → 13 → 14 → 16 → 18 → 19
+- **Product + Design:** 02 → 03 → 09 → 16 → 15 → 19
+- **Engineering:** 04 → 05 → 06 → 08 → 10 → 11 → 12 → 19
 - **Security/Compliance:** 07 → 11 → 12 → 14
 
 ## Document governance
